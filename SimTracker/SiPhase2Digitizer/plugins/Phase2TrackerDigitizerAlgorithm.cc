@@ -1015,6 +1015,7 @@ int Phase2TrackerDigitizerAlgorithm::convertSignalToAdc(uint32_t detID, float si
         << std::floor((signal_in_elec - threshold) / theElectronPerADC_) + 1 << " signal after slope correction "
         << temp_signal << " signal_in_adc " << signal_in_adc;
   }
+
   // For a test commit
   return signal_in_adc;
 }
